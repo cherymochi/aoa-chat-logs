@@ -1,0 +1,6 @@
+10:42:08 From Dr. Arnett Campbell To Everyone: Based on the exercise we just did, what is the Big O efficiency of Dijkstra’s algorithm if we use a min-priority queue data structure to implement it?
+10:52:21 From Michellee Hawkings To Everyone: Sir its O ( V + E log V )
+10:53:48 From Romario Black To Everyone: O(v^2)
+10:57:18 From Marcus Hardy To Everyone: I would say O(n), linear
+10:58:12 From Rosie Donaldson To Everyone: Linear logarithmic
+10:59:01 From Marcus Hardy To Everyone: I think the correct answer is really O(v^2)
