@@ -13,5 +13,20 @@ for line in lines:
         
         # Exclude teacher
         if name != 'Dr. Arnett Campell':
-            stud_answers[name] = answer
+            stud_answers.setdefault(name, 0)
+            if answer:
+                if stud_answers[name] < 5:
+                    stud_answers[name] += 1
+                    
+# Function to calculate grade percentage
+def calculate_grade_percentage(grade):
+    return (grade/5) * 100
+
+# Function to display grades
+def display_grades():
+    for student, grade in stud_answers.items():
+        percent = calculate_grade_percentage(grade)
+        print(f'{student}: Grade {grade} - {percent} %')
+
+display_grades()
 
