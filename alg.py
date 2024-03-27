@@ -1,4 +1,4 @@
-"""Function that reads and prints chat log to screen from a given file path."""
+# Function that reads and prints chat log to screen from a given file path.
 def read_chat_log(file_path):
     try:
         with open(file_path, 'r') as file:
