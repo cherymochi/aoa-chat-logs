@@ -1,3 +1,29 @@
+"""Function that reads and prints chat log to screen from a given file path."""
+
+def read_chat_log(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            chat_log = file.read()
+        return chat_log
+
+    except FileNotFoundError:
+        print("\nNo such chat file exists.")
+        print("\nTry Again")
+        return main()
+
+
+def main():
+    print("\nChat Log Reader\n")
+    file_path = input("Upload or enter the directory of the chat log file located your device: ")
+    chat_log = read_chat_log(file_path)
+    if chat_log:
+        print("\nChat log Recovered:\n")
+        print(chat_log)
+
+if __name__ == "__main__":
+    main()
+
+
 # Dictionary to store student names and answers
 stud_answers = {}
 
