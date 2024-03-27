@@ -12,7 +12,7 @@ for line in lines:
         answer = line.split(': ')[1].strip() # Get the student's answer
         
         # Exclude teacher
-        if name != 'Dr. Arnett Campell':
+        if name != 'Dr. Arnett Campbell':
             stud_answers.setdefault(name, 0)
             if answer:
                 if stud_answers[name] < 5:
@@ -26,7 +26,15 @@ def calculate_grade_percentage(grade):
 def display_grades():
     for student, grade in stud_answers.items():
         percent = calculate_grade_percentage(grade)
-        print(f'{student}: Grade {grade} - {percent} %')
+        print(f'{student}\t\t{grade}\t\t{percent}%')
+
+
+print("Student Participation Grades")
+print("------------------------------\n")
+
+print("Name\t\t\tGrade\t\t%")
+
+
 
 display_grades()
 
