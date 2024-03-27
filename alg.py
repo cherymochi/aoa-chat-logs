@@ -26,10 +26,10 @@ def calculate_grade_percentage(grade):
 def display_grades():
     for student, grade in stud_answers.items():
         percent = calculate_grade_percentage(grade)
-        print(f'{student}\t\t{grade}\t\t{percent}%')
+        print(f'{student}\t\t{grade}\t{percent}%')
 
 
-print("Student Participation Grades")
+print("\nStudent Participation Grades")
 print("------------------------------\n")
 
 print("Name\t\t\tGrade\t\t%")
