@@ -1,0 +1,16 @@
+10:42:08 From Dr. Arnett Campbell To Everyone: Based on the exercise we just did, what is the Big O efficiency of Dijkstra’s algorithm if we use a min-priority queue data structure to implement it?
+10:52:21 From Michellee Hawkings To Everyone: Sir its O(V + E log V)
+10:53:48 From Romario Black To Everyone: O(v^2)
+10:57:18 From Marcus Hardy To Everyone: I would say O(n), linear
+10:58:12 From Rosie Donaldson To Everyone: Linear logarithmic
+10:59:01 From Marcus Hardy To Everyone: I think the correct answer is really O(v^2)
+11:05:45 From Emma Thompson To Everyone: I agree with Michellee, it's O(V + E log V)
+11:10:32 From John Smith To Everyone: O(V^3) is another possible complexity
+11:15:19 From Samantha Johnson To Everyone: I think it's O(E log V), not sure though
+11:20:55 From Emily Brown To Everyone: O(log V) sounds right to me
+11:30:12 From Dr. Arnett Campbell To Everyone: Let's discuss another question. What is the time complexity of BFS (Breadth-First Search) algorithm?
+11:35:47 From Michellee Hawkings To Everyone: Sir, the time complexity of BFS is O(V + E), where V is the number of vertices and E is the number of edges.
+11:37:21 From Romario Black To Everyone: O(V^2)
+11:40:59 From Marcus Hardy To Everyone: O(E log V)
+11:42:18 From Rosie Donaldson To Everyone: O(n), linear
+11:45:03 From Emma Thompson To Everyone: I think it's O(E + V log V)

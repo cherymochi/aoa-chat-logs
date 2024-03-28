@@ -1,3 +1,28 @@
+# Function that reads and prints chat log to screen from a given file path.
+def read_chat_log(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            chat_log = file.read()
+        return chat_log
+    #Error Handling if File Not Found
+    except FileNotFoundError:
+        print("\n***No such chat file exists***")
+        print("\nTry Again")
+        return main()
+
+
+def main():
+    print("\n-=Chat Log Reader=-\n")
+    file_path = input("Upload or enter the directory of the chat log file located your device: ")
+    chat_log = read_chat_log(file_path)
+    if chat_log:
+        print("\nChat log Recovered:\n")
+        print(chat_log)
+
+if __name__ == "__main__":
+    main()
+
+
 # Dictionary to store student names and answers
 stud_answers = {}
 
@@ -29,12 +54,10 @@ def display_grades():
         print(f'{student}\t\t{grade}\t{percent}%')
 
 
-print("\nStudent Participation Grades")
+print("\n\n------------------------------")
+print("Student Participation Grades")
 print("------------------------------\n")
-
 print("Name\t\t\tGrade\t\t%")
-
-
 
 display_grades()
 
