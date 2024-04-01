@@ -8,7 +8,7 @@ def read_chat_log(file_path):
     except FileNotFoundError:
         print("\n***No such chat file exists***")
         print("\nTry Again")
-        return None
+        return main()
 
 
 def main():
