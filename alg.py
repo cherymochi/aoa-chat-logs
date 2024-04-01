@@ -1,3 +1,14 @@
+# Title:  Analysis of Algorithms Group Project -  Chat Grader
+# Date: March 17, 2024 
+# Contributors: 
+# Nathalea Evans – 2101707 
+# Tyler Myers – 2003217 
+# Christopher Jugar – 1503860 
+# Deiondre Emanuel - 2104559 
+
+
+
+
 # Function that reads and prints chat log to screen from a given file path.
 def read_chat_log(file_path):
     try:
